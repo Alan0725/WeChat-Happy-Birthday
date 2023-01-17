@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<page-meta>
+  <navigation-bar
+    title="{{nbTitle}}"
+    loading="{{nbLoading}}"
+    front-color="{{nbFrontColor}}"
+    background-color="{{nbBackgroundColor}}"
+    color-animation-duration="2000"
+    color-animation-timing-func="easeIn"
+  />
+  <view class="container">
+    <image class="happy" src="../../image/index/happy.png" />
+  </view>
+</page-meta>

@@ -1,0 +1,27 @@
+<!--lucky.wxml-->
+<page-meta>
+  <navigation-bar
+    title="{{nbTitle}}"
+    loading="{{nbLoading}}"
+    front-color="{{nbFrontColor}}"
+    background-color="{{nbBackgroundColor}}"
+    color-animation-duration="2000"
+    color-animation-timing-func="easeIn"
+  />
+  <view class="container">
+    <image class="background-image" style="width: 100%; height: {{imageHeight}}px;"  src="../../image/index/background-image.png"></image>
+    <view class='container-box'>
+      <lucky-grid
+        id="myLucky"
+        width="301px"
+        height="285px"
+        blocks="{{blocks}}"
+        prizes="{{prizes}}"
+        buttons="{{buttons}}"
+        default-config="{{defaultConfig}}"
+        bindstart="start"
+        bindend="end"
+      />
+    </view>
+  </view>
+</page-meta>

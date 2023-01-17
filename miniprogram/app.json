@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/lucky/lucky",
+    "pages/comment/comment",
+    "pages/music/music"
+  ],
+  "requiredBackgroundModes": ["audio"],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "disableScroll": true
+  },
+  "tabBar": {
+    "color": "#313131",
+    "selectedColor": "#ca3e47",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/tab/s.png",
+        "selectedIconPath": "image/tab/sa.png"
+      },
+      {
+        "pagePath": "pages/lucky/lucky",
+        "text": "抽奖",
+        "iconPath": "image/tab/r.png",
+        "selectedIconPath": "image/tab/ra.png"
+      },
+      {
+        "pagePath": "pages/comment/comment",
+        "text": "留言",
+        "iconPath": "image/tab/k.png",
+        "selectedIconPath": "image/tab/ka.png"
+      },
+      {
+        "pagePath": "pages/music/music",
+        "text": "音乐",
+        "iconPath": "image/tab/l.png",
+        "selectedIconPath": "image/tab/la.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

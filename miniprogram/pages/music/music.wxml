@@ -1,0 +1,38 @@
+<!--music.wxml-->
+<page-meta>
+  <navigation-bar
+    title="{{nbTitle}}"
+    loading="{{nbLoading}}"
+    front-color="{{nbFrontColor}}"
+    background-color="{{nbBackgroundColor}}"
+    color-animation-duration="2000"
+    color-animation-timing-func="easeIn"
+  />
+  <view class="container">
+    <view class="cdView">
+      <image class="{{ isPlaying ? 'imgs' : ''}} cd" mode="aspectFill" src="../../image/music/cd.png" />
+      <image class="{{ isPlaying ? 'imgs' : ''}} poster" mode="aspectFill" src="{{poster}}" />
+      <image class="pinhead" src="../../image/music/pinhead.png" />
+    </view>
+    <view class="nameView">
+      <text class="name">{{name}}</text>
+      <text class="author">{{author}}</text>
+    </view>
+
+    <view class="bottomView">
+      <view class="progressView">
+        <text class="time-left">{{currentTime}}</text>
+        <view class="progress-box">
+          <progress percent="{{progress}}" color="#FA5151" border-radius="2" stroke-width="4" />
+        </view>
+        <text class="time-right">{{duration}}</text>
+      </view>
+      <view class="buttonView">
+        <image src="../../image/music/prev.png" class="prev" capture-bind:tap="prev" />
+        <image src="../../image/music/play.png" class="play" capture-bind:tap="audioPlay" hidden="{{isPlaying}}"/>
+        <image src="../../image/music/pause.png" class="play" capture-bind:tap="audioPause" hidden="{{!isPlaying}}"/>
+        <image src="../../image/music/next.png" class="next" capture-bind:tap="next" />
+      </view>
+    </view>
+  </view>
+</page-meta>

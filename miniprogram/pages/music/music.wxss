@@ -1,0 +1,134 @@
+.imgs{
+  width: 84px;
+  height: 84px;
+  -webkit-animation:rotateVbtn 5s linear infinite 800ms 0 ease;
+  -moz-animation:rotateVbtn 5s linear infinite 800ms 0 ease;
+  -ms-animation:rotateVbtn 5s linear infinite 800ms 0 ease;
+  animation:rotateVbtn 5s linear infinite 800ms 0 ease;
+  -moz-animation:rotateVbtn 5s linear infinite;
+  -webkit-animation:rotateVbtn 5s linear infinite;
+  -o-animation:rotateVbtn 5s linear infinite;
+  -ms-animation:rotateVbtn 5s linear infinite;
+  animation:rotateVbtn 5s linear infinite;
+}
+@-webkit-keyframes rotateVbtn {
+  0% {
+  -webkit-transform:rotate(0);
+  -moz-transform:rotate(0);
+  -ms-transform:rotate(0);
+  -o-transform:rotate(0);
+  transform:rotate(0)
+}
+100% {
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+  transform:rotate(360deg)
+}}
+.poster{
+  z-index: 1;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius:50%;
+  overflow:hidden;
+  position: relative;
+  top: -360rpx;
+  left: 150rpx;
+}
+.pinhead{
+  width: 320rpx;
+  height: 67rpx;
+  position: relative;
+  left: 220rpx;
+  top: -320rpx;
+}
+.cdView{
+  width: 500rpx;
+  height: 500rpx;
+  margin-top: 150rpx;
+}
+.cd{
+  position: relative;
+  width: 500rpx;
+  height: 500rpx;
+  border-radius:50%;
+  overflow:hidden
+}
+.container{
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.nameView{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-top: 140rpx;
+}
+.name{
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+.author{
+  margin-top: 20rpx;
+  font-size: 14px;
+  color: #999999;
+}
+.prev{
+  width: 80rpx;
+  height: 80rpx;
+}
+.play{
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 60rpx;
+  margin-left: 60rpx;
+}
+.next{
+  width: 80rpx;
+  height: 80rpx;
+}
+.bottomView{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 50rpx;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.buttonView{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.progress-box{
+  width: 60%;
+  flex-direction: row;
+}
+.progressView{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20rpx;
+}
+.time-right{
+  width: 90rpx;
+  font-size: 14px;
+  color: #999;
+  text-align: right;
+}
+.time-left{
+  width: 90rpx;
+  font-size: 14px;
+  color: #999;
+  text-align: left;
+}

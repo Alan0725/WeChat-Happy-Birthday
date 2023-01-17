@@ -1,0 +1,12 @@
+<!--pages/comment/comment.wxml-->
+<page-meta class="container">
+  <navigation-bar
+    title="{{nbTitle}}"
+    loading="{{nbLoading}}"
+    front-color="{{nbFrontColor}}"
+    background-color="{{nbBackgroundColor}}"
+    color-animation-duration="2000"
+    color-animation-timing-func="easeIn"
+  />
+  <text>留言</text>
+</page-meta>
