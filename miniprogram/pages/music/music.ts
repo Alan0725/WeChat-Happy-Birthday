@@ -4,28 +4,40 @@ let innerAudioContext: WechatMiniprogram.InnerAudioContext;
 
 const musicArray = [
   {
-    src: 'http://music.163.com/song/media/outer/url?id=28864241.mp3',
-    poster: 'http://p3.music.126.net/5i5SKVW_F1ub2BgDeyjI5A==/3225967119049341.jpg?param=300x300',
-    name: 'Come and Get Your Love',
-    author: 'Redbone'
+    src: 'http://music.163.com/song/media/outer/url?id=1433496995.mp3',
+    poster: 'http://p3.music.126.net/rjWx5AHLuk_Du1BpnibeLA==/109951164833810818.jpg?param=300x300',
+    name: '生日快乐歌 (Happy Birthday)',
+    author: 'Noble Kids Chorus'
   },
   {
-    src: 'http://music.163.com/song/media/outer/url?id=1383729792.mp3',
-    poster: 'http://p3.music.126.net/Vn8jKwn5SgF0LLSYMdvKRQ==/109951167480888258.jpg?param=300x300',
-    name: 'Better Now',
-    author: 'BLANKS'
+    src: 'http://music.163.com/song/media/outer/url?id=497918887.mp3',
+    poster: 'http://p4.music.126.net/OsL7lQdoSguJh73vqa7dlw==/109951163000800364.jpg?param=300x300',
+    name: '生日祝福歌',
+    author: '格格'
   },
   {
-    src: 'http://music.163.com/song/media/outer/url?id=1411718813.mp3',
-    poster: 'http://p4.music.126.net/fX_V-LW5cytW_tgutF-u_Q==/109951164577122003.jpg?param=300x300',
-    name: '我是一只鱼',
-    author: '落日飞车'
+    src: 'http://music.163.com/song/media/outer/url?id=27570622.mp3',
+    poster: 'http://p3.music.126.net/NFi3ol5AL-RT2t35hBFlkg==/5724057534273557.jpg?param=300x300',
+    name: '生日快乐',
+    author: 'Luvea'
   },
   {
-    src: 'http://music.163.com/song/media/outer/url?id=77459.mp3',
-    poster: 'http://p4.music.126.net/yqG6StZ2-6bLnPVELreq2A==/18581746511427307.jpg?param=300x300',
-    name: '有多少爱可以重来',
-    author: '迪克牛仔'
+    src: 'http://music.163.com/song/media/outer/url?id=427610321.mp3',
+    poster: 'http://p3.music.126.net/U-YnTjWsC_7e4Zf_5reSHA==/18250793509885063.jpg?param=300x300',
+    name: '生日快乐歌',
+    author: 'SkyeLey'
+  },
+  {
+    src: 'http://music.163.com/song/media/outer/url?id=1453012476.mp3',
+    poster: 'http://p3.music.126.net/BqbJ63r-cqIoS8P7yqz-yg==/109951165037414994.jpg?param=300x300',
+    name: 'Another Piece of the Cake',
+    author: 'Summer Salt'
+  },
+  {
+    src: 'http://music.163.com/song/media/outer/url?id=1386071062.mp3',
+    poster: 'http://p4.music.126.net/WpQ9VyPxHc_W_y2uKyDA2g==/109951164316024001.jpg?param=300x300',
+    name: 'HBD',
+    author: '舵'
   }
 ]
 Page({

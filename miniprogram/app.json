@@ -1,4 +1,5 @@
 {
+  "lazyCodeLoading":"requiredComponents",
   "pages": [
     "pages/index/index",
     "pages/lucky/lucky",
@@ -33,7 +34,7 @@
       },
       {
         "pagePath": "pages/comment/comment",
-        "text": "留言",
+        "text": "许愿",
         "iconPath": "image/tab/k.png",
         "selectedIconPath": "image/tab/ka.png"
       },

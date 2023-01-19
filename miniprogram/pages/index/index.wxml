@@ -8,7 +8,49 @@
     color-animation-duration="2000"
     color-animation-timing-func="easeIn"
   />
-  <view class="container">
-    <image class="happy" src="../../image/index/happy.png" />
+  <view class="container" style="background-color: #fdf0f9;">
+    <block wx:if="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" style="background-color: #07c160; color: #ffffff; font-weight: 100;"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image class="background-image" style="width: 100%; height: {{imageHeight}}px;"  src="../../image/index/index_bg.png"></image>
+    <view class="userinfoView">
+      <view class="userinfo">
+        <block wx:if="{{canIUseOpenData}}">
+          <view class="userinfo-avatar" bindtap="bindViewTap">
+            <open-data type="userAvatarUrl"></open-data>
+          </view>
+          <open-data type="userNickName"></open-data>
+        </block>
+        <block wx:elif="{{!hasUserInfo}}">
+        </block>
+        <block wx:else>
+          <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+      </view>
+      <image class="happy" src="../../image/index/happy.png" />
+    </view>
+    <view class="camera -x">
+      <view class="camera -y">
+        <view class="camera -z">
+          <view class="fireworks">
+            <view class="line">
+              <view class="spark">
+                <view class="fire"></view>
+              </view>
+            </view>
+            <view class="line" wx:for="{{100}}" wx:key="*this">
+              <view class="spark">
+                <view class="fire"></view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    </block>
   </view>
 </page-meta>
